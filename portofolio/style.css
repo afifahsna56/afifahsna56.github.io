@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B0B0D;
+    color: #EAEAEA;
+}
+
+.navbar {
+    background: #1A1A1D;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FF66CC;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    background: linear-gradient(to right, #0B0B0D, #4B0082);
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.hero-text p {
+    color: #CCCCCC;
+    margin-top: 10px;
+}
+
+.hero-text .btn {
+    background-color: #FF66CC;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.hero-text .btn:hover {
+    background-color: #9933FF;
+}
+
+.hero-img img {
+    width: 220px;
+    border-radius: 50%;
+    border: 4px solid #FF66CC;
+}
+
+.tentang {
+    padding: 60px;
+    text-align: center;
+    background-color: #1A1A1D;
+}
+
+.skill {
+    padding: 60px;
+    background-color: #2A2A2D;
+    text-align: center;
+}
+
+.skill-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill .badge {
+    background-color: #4B0082;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill .badge:hover {
+    transform: scale(1.1);
+    background-color: #FF66CC;
+}
+
+.portofolio {
+    padding: 60px;
+    background-color: #1A1A1D;
+}
+
+.grid-proyek {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card-proyek {
+    background-color: #2A2A2D;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card-proyek img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.card-proyek:hover {
+    transform: translateY(-8px);
+    background-color: #4B0082;
+}
+
+.kontak {
+    padding: 40px;
+    text-align: center;
+    background-color: #2A2A2D;
+}
+
+footer {
+    background-color: #0B0B0D;
+    color: #CCCCCC;
+    text-align: center;
+    padding: 16px;
+}
