@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+           justify-content: center;
+           gap: 10px;
+        }
+
+        .item {
+            background-color: red;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .item-info {
+            padding: 8px;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .item-name {
+            margin: 0;
+            font-size: 13px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .item-price {
+            margin: 4px 0 0;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Nike Air Max 270">
+            <div class="item-info">
+                <p class="item-name">Nike Air Max 270</p>
+                <p class="item-price">Rp 1.899.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400" alt="Nike Blazer Mid 77">
+            <div class="item-info">
+                <p class="item-name">Nike Blazer Mid '77</p>
+                <p class="item-price">Rp 1.499.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=400" alt="Retro Sneaker Color">
+            <div class="item-info">
+                <p class="item-name">Retro Sneaker Color</p>
+                <p class="item-price">Rp 899.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=400" alt="Vans Old Skool Classic">
+            <div class="item-info">
+                <p class="item-name">Vans Old Skool Classic</p>
+                <p class="item-price">Rp 799.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400" alt="Nike Air Max Pastel">
+            <div class="item-info">
+                <p class="item-name">Nike Air Max Pastel</p>
+                <p class="item-price">Rp 1.699.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?w=400" alt="Adidas Ultraboost 21">
+            <div class="item-info">
+                <p class="item-name">Adidas Ultraboost 21</p>
+                <p class="item-price">Rp 2.299.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400" alt="Puma White Classic">
+            <div class="item-info">
+                <p class="item-name">Puma White Classic</p>
+                <p class="item-price">Rp 849.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=400" alt="Nike React Infinity">
+            <div class="item-info">
+                <p class="item-name">Nike React Infinity</p>
+                <p class="item-price">Rp 1.749.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400" alt="Nike Dunk Low Green">
+            <div class="item-info">
+                <p class="item-name">Nike Dunk Low Green</p>
+                <p class="item-price">Rp 1.599.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1514989940723-e8e51635b782?w=400" alt="Timberland Classic Boot">
+            <div class="item-info">
+                <p class="item-name">Timberland Classic Boot</p>
+                <p class="item-price">Rp 2.899.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=400" alt="Converse Chuck 70s">
+            <div class="item-info">
+                <p class="item-name">Converse Chuck 70s</p>
+                <p class="item-price">Rp 759.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1575537302964-96cd47c06b1b?w=400" alt="New Balance 574 Grey">
+            <div class="item-info">
+                <p class="item-name">New Balance 574 Grey</p>
+                <p class="item-price">Rp 1.199.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?w=400" alt="Reebok Club C 85">
+            <div class="item-info">
+                <p class="item-name">Reebok Club C 85</p>
+                <p class="item-price">Rp 999.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?w=400" alt="Nike Air Force 1 07">
+            <div class="item-info">
+                <p class="item-name">Nike Air Force 1 '07</p>
+                <p class="item-price">Rp 1.549.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400" alt="Running Athletic Pro">
+            <div class="item-info">
+                <p class="item-name">Running Athletic Pro</p>
+                <p class="item-price">Rp 649.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?w=400" alt="Adidas Stan Smith">
+            <div class="item-info">
+                <p class="item-name">Adidas Stan Smith</p>
+                <p class="item-price">Rp 1.299.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=400" alt="Nike Zoom Fly 3">
+            <div class="item-info">
+                <p class="item-name">Nike Zoom Fly 3</p>
+                <p class="item-price">Rp 2.099.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=400" alt="Nike Air Max 97 Blue">
+            <div class="item-info">
+                <p class="item-name">Nike Air Max 97 Blue</p>
+                <p class="item-price">Rp 2.399.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1579338559194-a162d19bf842?w=400" alt="Asics Gel-Kayano 28">
+            <div class="item-info">
+                <p class="item-name">Asics Gel-Kayano 28</p>
+                <p class="item-price">Rp 1.899.000</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?w=400" alt="Puma RS-X Reinvention">
+            <div class="item-info">
+                <p class="item-name">Puma RS-X Reinvention</p>
+                <p class="item-price">Rp 1.399.000</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
