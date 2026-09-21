@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Pertemuan 12 — Navbar, Dropdown & Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1f2937;
+      padding: 12px 32px;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .brand h1 {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-list > li > a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .nav-list > li > a:hover {
+      background-color: #4a90e2;
+      color: #ffffff;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #374151;
+      list-style: none;
+      min-width: 190px;
+      padding: 8px 0;
+      border-radius: 0 0 8px 8px;
+      z-index: 10;
+    }
+
+    .dropdown-menu li a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 16px;
+      font-size: 14px;
+    }
+
+    .dropdown-menu li a:hover {
+      background-color: #4a90e2;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+    }
+
+    .content {
+      padding: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .content h2 {
+      margin-bottom: 8px;
+    }
+
+    .content p.intro {
+      margin-bottom: 24px;
+      color: #555;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .card {
+      width: 300px;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.25s ease, filter 0.25s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+      filter: brightness(1.08);
+    }
+
+    .card figcaption {
+      padding: 12px 14px 16px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .card figcaption strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 13px;
+    }
+
+    @media (max-width: 720px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 16px;
+      }
+
+      .nav-list {
+        flex-wrap: wrap;
+      }
+
+      .card {
+        width: 100%;
+      }
+
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+            padding: 16px 32px;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .nav-list a:hover {
+            color: #4A90E2;
+        }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="#">
+      <img src="assets/image1.jpeg" alt="Logo">
+      <h1>Afifah Taqiyya</h1>
+    </a>
+
+    <ul class="nav-list">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li class="dropdown">
+        <a href="#">Layanan ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Desain Web</a></li>
+          <li><a href="#">Pemrograman</a></li>
+          <li><a href="#">SEO</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>Galeri Foto</h2>
+    <p class="intro">Kumpulan foto latihan Flexbox + flex-wrap. Arahkan kursor ke gambar untuk melihat efek hover.</p>
+
+    <div class="gallery">
+      <figure class="card">
+        <img src="assets/image2.jpeg" alt="Hutan Kota ">
+        <figcaption><strong>Hutan Kota GBK</strong>Tempat tenang melihat pemandangan Kota Jakarta.</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="assets/image3.jpeg" alt="GEMAR Funwalk">
+        <figcaption><strong>Generasi Maju Bersinar</strong>Funwalk bersama Kementrian Pariwisata Ekonomi Kreatif.</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="assets/image4.jpeg" alt="TIM">
+        <figcaption><strong>Taman Ismail Marzuki</strong>Pameran Karya Presiden ke-6, Susilo Bambang Yudhoyono.</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="assets/image5.jpeg" alt="TRI">
+        <figcaption><strong>Trash Ranger Indonesia</strong>Trace Fest 2026.</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="assets/image6.jpeg" alt="YRI">
+        <figcaption><strong>Youth Rangers Indonesia</strong>YRI District Jakarta-Banten bersama Kementrian Keuangan.</figcaption>
+      </figure>
+
+      <figure class="card">
+        <img src="assets/image7.jpeg" alt="Ruang Tumbuh">
+        <figcaption><strong>Ruang Tumbuh</strong>Ruang Tumbuh Chapter 2.</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    Tugas Praktikum Pemrograman Web — Pertemuan 12 (Navbar, Dropdown, Gallery)
+  </footer>
+</body>
+</html>
